@@ -2,6 +2,12 @@ import AcmeLogo from '@app/app/ui/acme-logo';
 import LoginForm from '@app/app/ui/login-form';
 import { Suspense } from 'react';
  
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Login | Acme Dashboard',
+};
+
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
